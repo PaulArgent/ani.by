@@ -1,0 +1,249 @@
+@charset "UTF-8";
+
+html 
+	{
+		width: 100%;
+		height: 100%;
+	}
+
+img 
+	{ 
+		border: 0;
+	}
+			  
+body 
+	{
+		position: relative;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		font-size: 12px;
+		font-family: Verdana;
+		font-weight: 500;
+		-webkit-font-smoothing: antialiased;
+		/*background: linear-gradient(to bottom, #010a13, #0085de 50%, #010a13);*/
+		background: url(bg.jpg) repeat center center fixed;
+		/*-webkit-background-size: cover;*/	/* Safari 3.1+ и Chrome 4.0+ */
+		/*-moz-background-size: cover;*/	/* Firefox 3.6+ */
+		/*-o-background-size: cover;*/		/* Opera 9.6+ */
+		/*background-size: cover;*/			/* Современные браузеры */
+	}
+
+.global-header 
+	{
+		width: 650px;
+		margin: 0 auto;
+		padding: 250px 0 50px 0;
+		font-size: 16px;
+	}
+
+.global-nav 
+	{
+		text-align: center;
+	}
+
+.logo 
+	{
+		width:1280px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 10%;
+		margin-bottom: 0px;
+	}
+
+ul
+	{
+		display: none;
+	}
+
+.content 
+	{
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		line-height:24px;
+		color:#F5F5F5;
+		width:630px;
+		display: block;
+		margin: 0 auto;
+		/* 0.6 - старый вариант прозрачности*/
+		background: rgba(250,242,252, 0.4);
+		padding: 30px 30px;
+		font-size: 16px;
+		font-family: verdana;
+        text-shadow: 1px 1px 2px black, 0 0 1em #DCDCDC;
+	}
+
+h1 
+	{
+		text-align: center;
+		margin-bottom: 30px;
+		color:#F5F5F5;
+		font-size: 24px;
+		font-weight: 600;
+        text-shadow: 1px 1px 2px black, 0 0 1em #560056;
+		font-family: verdana;
+	}
+
+h2 
+	{
+		text-align: center;
+		margin-bottom: 10px;
+		color:#F5F5F5;
+		font-size: 20px;
+		font-weight: 600;
+		text-shadow: 1px 1px 2px #000000, 0 0 1em #005785;
+		font-family: verdana;
+	}
+		
+p
+	{
+		text-align: center;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		color:#F5F5F5;
+		font-size: 12px;
+		font-weight: 600;
+		text-shadow: 1px 1px 2px #000000, 0 0 1em #005785;
+		font-family: verdana;
+	}
+				
+
+a
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+a:hover
+	{
+		text-decoration: underline;
+	}
+	
+a:visited {
+	text-decoration: none;
+	color: #208be6;
+	}
+
+footer, .global-footer
+	{
+		display: none;
+	}
+	
+.frame1 
+	{
+		/* Точечная рамка */
+		font-size: 18px;
+		text-indent: 30px;
+		border: 3px dotted #ffffff;
+		padding: 10px 20px 10px 20px;
+		margin: 20px auto;
+		width: 500px;
+	}
+	
+.frame2 
+	{
+		/* Красная рамка под белорусский флаг */
+		font-size: 18px;
+		border-radius: 10px;
+		box-shadow: 0 0 0 3px #fffeff,
+		0 0 0 7px #d85954,
+		0 0 0 10px #00923f;
+		text-indent: 10px;
+		padding: 10px 20px 10px 20px;
+		margin: 20px auto;
+		width: 500px;
+	}	
+
+.frame3
+	{
+		/* Рамка для картинок */
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+		padding: 5px;
+		background: #fffeff;
+	}
+	
+.frame4
+	{
+		/* Прозрачная рамка */
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+		padding: 5px;
+	}	
+
+.frame5
+	{
+		/* Рамка для подвала сайта */
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+		padding: 10px;
+		margin: 15px auto;
+		width: 150px;
+	}		
+	
+video
+	{ 
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-o-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		transition: 1s opacity;
+	}
+
+/*	
+@media all
+	{ 
+		#bgvid { display: none; }
+	}	
+*/
+
+@media screen and (max-width: 720px)
+	{
+		#bgvid { display: none; }
+		
+		video 
+			{ 
+				top: 0;
+				left: 0;
+				width: 0;
+				height: 0;
+				min-width: 0;
+				min-height: 0;
+			}
+				
+		p
+			{
+				font-size: 16px;
+				width:630px;
+			}
+				
+		h1
+			{
+				font-size: 34px;
+			}
+
+		h2 
+			{
+				font-size: 32px;
+			}				
+				
+		.content
+			{
+				font-size: 24px;
+			}
+			
+	}
