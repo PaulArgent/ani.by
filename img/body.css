@@ -45,11 +45,13 @@ body
 
 .logo 
 	{
-		width:1280px;
-		margin: 0 auto;
-		display: block;
-		margin-top: 10%;
-		margin-bottom: 0px;
+		width:75%;
+	}
+
+.logo img
+	{
+		max-width:100%;
+		height:auto;
 	}
 
 ul
